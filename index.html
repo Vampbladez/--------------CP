@@ -3,9 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyberpunk promo</title>
-  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -14,7 +14,7 @@
         <img src="img/cyberpunk.svg" alt="Киберпанк логотип">
       </a>
       <ul class="social header__social list-reset">
-        <li class="social__item"><a href="https://youtube.com/" target="_blank" class="social__link social__link--youtube" aria-label="Киберпанк на Ютубе" ></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--youtube" aria-label="Киберпанк на Ютубе"></a></li>
         <li class="social__item"><a href="#" class="social__link social__link--vk" aria-label="Киберпанк во Вконтакте"></a></li>
         <li class="social__item"><a href="#" class="social__link social__link--facebook" aria-label="Киберпанк в Фейсбук"></a>
         </li>
@@ -30,7 +30,9 @@
       <h1 class="visually-hidden">Промо Киберпанк</h1>
       <div class="swiper-container hero__slider swiper-no-swiping">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url(/img/bg-2.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url('img/bg-1.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('img/bg-2.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('img/bg-3.jpg');"></div>
         </div>
       </div>
       <div class="container hero__container">
@@ -51,16 +53,22 @@
           и&nbsp;стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на&nbsp;ход сюжета
           и&nbsp;всё, что тебя окружает.
         </p>
-        <div class="image-flex">
-  <div class="left">
-    <img src="/img/1.jpg" alt="">
-    <img src="/img/2.jpg" alt="">
-  </div>
-
-  <div class="right">
-    <img src="/img/3.jpg" alt="">
-  </div>
-</div>
+        <div class="about__images">
+          <div class="about__left">
+            <div class="about__image about__image--mini corner-block">
+              <img src="img/1.jpg" alt="Найт-сити 1">
+            </div>
+            <div class="about__image about__image--mini corner-block">
+              <img src="img/2.jpg" alt="Найт-сити 2">
+            </div>
+          </div>
+          <div class="about__image about__image--big corner-block">
+            <picture>
+              <source srcset="img/3-tablet.jpg" media="(max-width: 1024px)">
+              <img src="img/3.jpg" alt="Найт-сити 3">
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
     <section class="game">
@@ -187,5 +195,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
